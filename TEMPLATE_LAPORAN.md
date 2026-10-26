@@ -1,35 +1,22 @@
-# Final Project Oprec PENSHIP - <Nama Lengkap> (<NRP>)
+# Laporan Final Project YOLOv8 - Oprec PENSHIP
 
-## Identitas
-- Nama: <Nama Lengkap>
-- NRP: <NRP>
-- Program studi: <Program studi>
+* **Nama:** Ahmad Zaky Faza
+* **NRP:** 2126500004
+* **Objek Deteksi:** `bottle`, `laptop`, `pencil`
 
-## Project Roboflow
-- Project ID Roboflow: <workspace/project>, version <nomor>
-- Link Roboflow Universe: https://universe.roboflow.com/<workspace>/<project>
+---
 
-## Dataset
-- Jumlah foto asli: bottle ..., laptop ..., pencil ...
-- Metode pengambilan foto: <variasi jarak, sudut, cahaya, dan latar>
-- Fitur AI labeling Roboflow yang digunakan (apabila ada) dan cara perapiannya: ...
+## 1. Ringkasan Proyek
+Proyek ini mengimplementasikan model Computer Vision menggunakan **YOLOv8** untuk mendeteksi tiga objek utama yaitu *bottle*, *laptop*, dan *pencil* secara akurat. Pelatihan dan pengujian dilakukan menggunakan lingkungan Google Colab.
 
-## Training
-- Lingkungan training: <laptop (sebutkan GPU) / Google Colab>
-- Model: <yolov8n / yolov8s>
-- Grafik: lihat folder grafik/
+## 2. Konfigurasi & Pelatihan Model
+* **Model yang Digunakan:** YOLOv8 Nano (`yolov8n.pt`)
+* **Dataset:** Roboflow Dataset (Custom classes: bottle, laptop, pencil)
+* **Lingkungan Eksekusi:** Google Colab (GPU T4)
 
-## Pengembangan Kode
-Daftar perubahan terhadap kode dasar, beserta alasan dan pengaruhnya terhadap hasil:
-1. ...
-2. ...
+## 3. Skrip Pengujian / Inferensi
+Skrip inferensi dikembangkan dan diuji langsung di Google Colab dengan hasil *output* prediksi berhasil tersimpan di direktori `/content/runs/detect/predict`.
 
-## Hasil Eksperimen
-| No | Skenario | Epochs | Batch | Optimizer | mAP50 | mAP50-95 | Keterangan |
-|:--:|:---|:---:|:---:|:---:|:---:|:---:|:---|
-| 0 | Baseline (kode dasar) | 50 | 16 | auto | ... | ... | Titik acuan |
-| 1 | ... | ... | ... | ... | ... | ... | ... |
-
-## Analisis dan Kendala
-- Analisis penyebab skenario terbaik menghasilkan nilai lebih tinggi: ...
-- Kendala yang ditemui dan cara penyelesaiannya: ...
+## 4. Link Video Demo
+Demonstrasi eksekusi program dan hasil deteksi objek dapat ditonton melalui tautan Google Drive berikut:
+🔗 **[Link Google Drive Video Demo]([MASUKKAN_LINK_GOOGLE_DRIVE_DISINI](https://docs.google.com/forms/d/e/1FAIpQLScBd1tckmXn7mtFNVWkB1ycMhwDkzHdvOGNCkMrWQiJNqIfTQ/viewform?usp=send_form))**
